@@ -13,7 +13,13 @@ var Steps = function () {
   };
 
   this.add = function (req, resp, params) {
-    this.respond({params: params});
+    var self = this;
+    geddy.model.ToDo.all(function(err, data){
+      if(err){
+        throw err;
+      }
+      self.respond({params: params, toDos: data });
+    })
   };
 
   this.create = function (req, resp, params) {
@@ -60,7 +66,12 @@ var Steps = function () {
         throw new geddy.errors.BadRequestError();
       }
       else {
-        self.respondWith(step);
+        geddy.model.ToDo.all(function(err, data){
+          if(err){
+            throw err;
+          }
+          self.respond({step: step, toDos: data});
+        })
       }
     });
   };
