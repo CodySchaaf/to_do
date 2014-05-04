@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8587b193-ea3e-4925-8818-ba075d701861" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_session_store.json" afterPath="$PROJECT_DIR$/_session_store.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/to_do.js" afterPath="$PROJECT_DIR$/app/models/to_do.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrations/20140503175525_create_steps.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/steps/add.html.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/steps/edit.html.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/steps/form.html.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/steps/index.html.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/steps/show.html.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/step.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/models/step.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/steps.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/controllers/steps.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/router.js" afterPath="$PROJECT_DIR$/config/router.js" />
     </list>
     <ignored path="to_do.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,11 +48,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="to_do.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="to_do.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/to_do.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.11857708" vertical-offset="0" max-vertical-offset="1012">
-              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.14822134" vertical-offset="0" max-vertical-offset="1012">
+              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -74,6 +94,7 @@
         <option value="$PROJECT_DIR$/config/development.js" />
         <option value="$PROJECT_DIR$/app/models/to_do.js" />
         <option value="$PROJECT_DIR$/_datastore.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -332,8 +353,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/to_do.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11857708" vertical-offset="0" max-vertical-offset="1012">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14822134" vertical-offset="0" max-vertical-offset="1012">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
           <folding />
         </state>
       </provider>
