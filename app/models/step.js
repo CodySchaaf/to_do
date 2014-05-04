@@ -6,6 +6,14 @@ var Step = function () {
     status: {type: 'string'}
   });
 
+  this.belongsTo('Todo')
+
+  this.validatesPresent('title')
+  this.validatesLength('title', {min: 5})
+
+  this.validatesWithFunction('status', function(status){
+      return status == 'done' || status == 'open';
+  }, { message: "Status must be 'open' or 'done.'" });
   /*
   this.property('login', 'string', {required: true});
   this.property('password', 'string', {required: true});

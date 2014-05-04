@@ -5,13 +5,15 @@ var ToDo = function () {
     status: {type: 'string'}
   });
 
-    // Add this inside the constructor function
-    this.validatesPresent('title');
-    this.validatesLength('title', {min: 5});
+  this.hasMany('Steps')
 
-    this.validatesWithFunction('status', function (status) {
-        return status == 'open' || status == 'done';
-    }, {message: "Status must be 'open' or 'done.'"});
+  // Add this inside the constructor function
+  this.validatesPresent('title');
+  this.validatesLength('title', {min: 5});
+
+  this.validatesWithFunction('status', function (status) {
+      return status == 'open' || status == 'done';
+  }, {message: "Status must be 'open' or 'done.'"});
 
   /*
   this.property('login', 'string', {required: true});

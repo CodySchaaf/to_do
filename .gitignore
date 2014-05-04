@@ -9,3 +9,5 @@ config/secrets.json
 public/js/core/models.js
 public/js/core/helpers.js
 _datastore.json
+.idea/workspace.xml
+.idea/codeStyleSettings.xml
